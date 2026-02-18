@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">kts-kmp-project</string>
+    <string name="start">Начать</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+</resources>
