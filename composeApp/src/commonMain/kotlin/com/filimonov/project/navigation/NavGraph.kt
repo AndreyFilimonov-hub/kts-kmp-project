@@ -6,30 +6,33 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.filimonov.project.screens.loginscreen.LoginScreen
 import com.filimonov.project.screens.welcomescreen.WelcomeScreen
+import kotlinx.serialization.Serializable
 
 @Composable
 fun NavGraph() {
     val navController = rememberNavController()
     NavHost(
         navController = navController,
-        startDestination = Screen.WelcomeScreen.route
+        startDestination = Screen.WelcomeScreen
     ) {
-        composable(Screen.WelcomeScreen.route) {
+        composable<Screen.WelcomeScreen> {
             WelcomeScreen(
                 navigateToLoginScreen = {
-                    navController.navigate(Screen.LoginScreen.route)
+                    navController.navigate(Screen.LoginScreen)
                 }
             )
         }
-        composable(Screen.LoginScreen.route) {
+        composable<Screen.LoginScreen> {
             LoginScreen()
         }
     }
 }
 
-sealed class Screen(val route: String) {
+sealed interface Screen {
 
-    data object WelcomeScreen : Screen("welcome")
+    @Serializable
+    data object WelcomeScreen : Screen
 
-    data object LoginScreen : Screen("login")
+    @Serializable
+    data object LoginScreen : Screen
 }
