@@ -65,7 +65,7 @@ fun WelcomeScreen(
 }
 
 @Composable
-fun StartButton(
+private fun StartButton(
     modifier: Modifier = Modifier,
     onClick: () -> Unit
 ) {
