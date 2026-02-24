@@ -1,18 +1,16 @@
 package com.filimonov.project.screens.loginscreen
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -26,12 +24,15 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
+import com.filimonov.project.ui.utils.MediumVerticalSpacer
 import kts_kmp_project.composeapp.generated.resources.Res
 import kts_kmp_project.composeapp.generated.resources.compose_multiplatform
 import kts_kmp_project.composeapp.generated.resources.email_label
+import kts_kmp_project.composeapp.generated.resources.login
 import kts_kmp_project.composeapp.generated.resources.password_label
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
@@ -47,7 +48,6 @@ fun LoginScreen(
         val passwordValue = rememberSaveable { mutableStateOf("") }
         Column(
             modifier = Modifier
-                .background(Color.White)
                 .fillMaxSize()
                 .padding(innerPadding)
                 .padding(horizontal = 26.dp)
@@ -68,14 +68,14 @@ fun LoginScreen(
                     emailValue.value = it
                 },
                 colors = TextFieldDefaults.colors(
-                    focusedTextColor = Color.Blue,
-                    unfocusedTextColor = Color.Blue,
-                    focusedIndicatorColor = Color.Blue,
-                    unfocusedIndicatorColor = Color.Blue,
+                    focusedTextColor = MaterialTheme.colorScheme.onPrimaryContainer,
+                    unfocusedTextColor = MaterialTheme.colorScheme.onPrimaryContainer,
+                    focusedIndicatorColor = MaterialTheme.colorScheme.primary,
+                    unfocusedIndicatorColor = MaterialTheme.colorScheme.primary,
                     focusedContainerColor = Color.Transparent,
                     unfocusedContainerColor = Color.Transparent,
-                    focusedLabelColor = Color.Blue.copy(alpha = 0.4f),
-                    unfocusedLabelColor = Color.Blue.copy(alpha = 0.4f)
+                    focusedLabelColor = MaterialTheme.colorScheme.onPrimaryContainer,
+                    unfocusedLabelColor = MaterialTheme.colorScheme.onPrimaryContainer
                 ),
                 label = {
                     Text(
@@ -87,7 +87,7 @@ fun LoginScreen(
                 ),
                 maxLines = 1
             )
-            Spacer(modifier = Modifier.height(16.dp))
+            MediumVerticalSpacer()
             OutlinedTextField(
                 modifier = Modifier.fillMaxWidth(),
                 value = passwordValue.value,
@@ -95,14 +95,14 @@ fun LoginScreen(
                     passwordValue.value = it
                 },
                 colors = TextFieldDefaults.colors(
-                    focusedTextColor = Color.Blue,
-                    unfocusedTextColor = Color.Blue,
-                    focusedIndicatorColor = Color.Blue,
-                    unfocusedIndicatorColor = Color.Blue,
+                    focusedTextColor = MaterialTheme.colorScheme.onPrimaryContainer,
+                    unfocusedTextColor = MaterialTheme.colorScheme.onPrimaryContainer,
+                    focusedIndicatorColor = MaterialTheme.colorScheme.primary,
+                    unfocusedIndicatorColor = MaterialTheme.colorScheme.primary,
                     focusedContainerColor = Color.Transparent,
                     unfocusedContainerColor = Color.Transparent,
-                    focusedLabelColor = Color.Blue.copy(alpha = 0.4f),
-                    unfocusedLabelColor = Color.Blue.copy(alpha = 0.4f)
+                    focusedLabelColor = MaterialTheme.colorScheme.onPrimaryContainer,
+                    unfocusedLabelColor = MaterialTheme.colorScheme.onPrimaryContainer
                 ),
                 label = {
                     Text(
@@ -115,7 +115,7 @@ fun LoginScreen(
                 ),
                 maxLines = 1
             )
-            Spacer(modifier = Modifier.height(16.dp))
+            MediumVerticalSpacer()
             LoginButton(
                 onClick = { /* no logic */ }
             )
@@ -132,12 +132,18 @@ private fun LoginButton(
         modifier = modifier.fillMaxWidth()
             .heightIn(min = 48.dp),
         onClick = onClick,
-        colors = ButtonDefaults.buttonColors(containerColor = Color.Blue)
+        colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
     ) {
         Text(
-            text = "Войти",
+            text = stringResource(Res.string.login),
             fontSize = 19.sp,
             fontWeight = FontWeight.Bold
         )
     }
+}
+
+@Preview
+@Composable
+fun LoginScreenPreview() {
+    LoginScreen()
 }
