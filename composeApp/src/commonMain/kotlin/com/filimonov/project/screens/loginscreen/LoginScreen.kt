@@ -31,6 +31,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
+import com.filimonov.project.ui.theme.AppTheme
 import com.filimonov.project.ui.utils.MediumVerticalSpacer
 import kts_kmp_project.composeapp.generated.resources.Res
 import kts_kmp_project.composeapp.generated.resources.compose_multiplatform
@@ -151,5 +152,7 @@ private fun LoginButton(
 @Preview
 @Composable
 fun LoginScreenPreview() {
-    LoginScreen()
+    AppTheme {
+        LoginScreen()
+    }
 }

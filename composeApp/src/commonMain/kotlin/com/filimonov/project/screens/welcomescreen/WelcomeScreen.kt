@@ -19,6 +19,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
+import com.filimonov.project.ui.theme.AppTheme
 import com.filimonov.project.ui.utils.LargeVerticalSpacer
 import com.filimonov.project.ui.utils.MediumVerticalSpacer
 import kts_kmp_project.composeapp.generated.resources.Res
@@ -85,7 +86,9 @@ private fun StartButton(
 @Preview
 @Composable
 fun WelcomeScreenPreview() {
-    WelcomeScreen(
-        navigateToLoginScreen = {}
-    )
+    AppTheme {
+        WelcomeScreen(
+            navigateToLoginScreen = {}
+        )
+    }
 }
