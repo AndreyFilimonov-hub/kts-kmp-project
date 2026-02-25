@@ -1,4 +1,4 @@
-package com.filimonov.project.screens.loginscreen
+package com.filimonov.project.presentation.screens.loginscreen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -29,8 +29,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
-import com.filimonov.project.ui.theme.AppTheme
-import com.filimonov.project.ui.utils.MediumVerticalSpacer
+import com.filimonov.project.presentation.ui.theme.AppTheme
+import com.filimonov.project.presentation.ui.utils.MediumVerticalSpacer
 import kts_kmp_project.composeapp.generated.resources.Res
 import kts_kmp_project.composeapp.generated.resources.compose_multiplatform
 import kts_kmp_project.composeapp.generated.resources.email_label
