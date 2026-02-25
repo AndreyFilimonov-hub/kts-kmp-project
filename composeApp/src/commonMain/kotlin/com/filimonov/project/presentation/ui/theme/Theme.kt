@@ -1,4 +1,4 @@
-package com.filimonov.project.ui.theme
+package com.filimonov.project.presentation.ui.theme
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
