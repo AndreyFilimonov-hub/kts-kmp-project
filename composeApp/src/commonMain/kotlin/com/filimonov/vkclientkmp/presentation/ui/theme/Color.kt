@@ -1,4 +1,4 @@
-package com.filimonov.project.presentation.ui.theme
+package com.filimonov.vkclientkmp.presentation.ui.theme
 import androidx.compose.ui.graphics.Color
 
 val primaryLight = Color(0xFF0066FF)

@@ -1,4 +1,4 @@
-package com.filimonov.project.presentation.screens.onboardingscreen
+package com.filimonov.vkclientkmp.presentation.screens.onboardingscreen
 
 import org.jetbrains.compose.resources.DrawableResource
 

@@ -1,11 +1,11 @@
-package com.filimonov.project.presentation.navigation
+package com.filimonov.vkclientkmp.presentation.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.filimonov.project.presentation.screens.loginscreen.LoginScreen
-import com.filimonov.project.presentation.screens.onboardingscreen.OnboardingScreen
+import com.filimonov.vkclientkmp.presentation.screens.loginscreen.LoginScreen
+import com.filimonov.vkclientkmp.presentation.screens.onboardingscreen.OnboardingScreen
 import kotlinx.serialization.Serializable
 
 @Composable

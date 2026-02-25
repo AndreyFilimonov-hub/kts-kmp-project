@@ -60,11 +60,11 @@ kotlin {
 }
 
 android {
-    namespace = "com.filimonov.project"
+    namespace = "com.filimonov.vkclientkmp"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.filimonov.project"
+        applicationId = "com.filimonov.vkclientkmp"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1

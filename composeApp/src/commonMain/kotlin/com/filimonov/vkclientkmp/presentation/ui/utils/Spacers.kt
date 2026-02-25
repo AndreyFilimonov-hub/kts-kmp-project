@@ -1,4 +1,4 @@
-package com.filimonov.project.presentation.ui.utils
+package com.filimonov.vkclientkmp.presentation.ui.utils
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height

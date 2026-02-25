@@ -1,4 +1,4 @@
-package com.filimonov.project.presentation.screens.onboardingscreen
+package com.filimonov.vkclientkmp.presentation.screens.onboardingscreen
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColorAsState
@@ -33,19 +33,19 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.filimonov.project.presentation.ui.theme.AppTheme
-import com.filimonov.project.presentation.ui.utils.MediumVerticalSpacer
-import kts_kmp_project.composeapp.generated.resources.Res
-import kts_kmp_project.composeapp.generated.resources.onboard_friends
-import kts_kmp_project.composeapp.generated.resources.onboard_profile
-import kts_kmp_project.composeapp.generated.resources.onboard_vk
-import kts_kmp_project.composeapp.generated.resources.onboarding_friends_description
-import kts_kmp_project.composeapp.generated.resources.onboarding_friends_title
-import kts_kmp_project.composeapp.generated.resources.onboarding_profile_description
-import kts_kmp_project.composeapp.generated.resources.onboarding_profile_title
-import kts_kmp_project.composeapp.generated.resources.onboarding_vk_description
-import kts_kmp_project.composeapp.generated.resources.onboarding_vk_title
-import kts_kmp_project.composeapp.generated.resources.start
+import com.filimonov.vkclientkmp.presentation.ui.theme.AppTheme
+import com.filimonov.vkclientkmp.presentation.ui.utils.MediumVerticalSpacer
+import vkclientkmp.composeapp.generated.resources.Res
+import vkclientkmp.composeapp.generated.resources.onboard_friends
+import vkclientkmp.composeapp.generated.resources.onboard_profile
+import vkclientkmp.composeapp.generated.resources.onboard_vk
+import vkclientkmp.composeapp.generated.resources.onboarding_friends_description
+import vkclientkmp.composeapp.generated.resources.onboarding_friends_title
+import vkclientkmp.composeapp.generated.resources.onboarding_profile_description
+import vkclientkmp.composeapp.generated.resources.onboarding_profile_title
+import vkclientkmp.composeapp.generated.resources.onboarding_vk_description
+import vkclientkmp.composeapp.generated.resources.onboarding_vk_title
+import vkclientkmp.composeapp.generated.resources.start
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 

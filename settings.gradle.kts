@@ -1,4 +1,4 @@
-rootProject.name = "kts-kmp-project"
+rootProject.name = "VkClientKmp"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
