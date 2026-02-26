@@ -10,4 +10,5 @@
     <string name="email_label">Email</string>
     <string name="password_label">Password</string>
     <string name="login">Войти</string>
+    <string name="invalid_data">Неверный адрес эллектронной почты или пароль</string>
 </resources>
