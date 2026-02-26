@@ -7,6 +7,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -59,6 +60,11 @@ private fun Post(
         Text(
             modifier = Modifier.padding(8.dp),
             text = post.author
+        )
+        Text(
+            modifier = Modifier.padding(horizontal = 8.dp),
+            text = post.createdAt,
+            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.3f)
         )
         AsyncImage(
             model = post.contentUrl,
